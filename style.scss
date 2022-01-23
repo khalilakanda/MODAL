@@ -1,0 +1,87 @@
+$primaryColor: #ff1905;
+$secondaryColor: rgba(0, 0, 0, .5);
+$lightColor: #fff;
+$textcolor: #ed123c;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    background-image: url(./home.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    .click{
+        background: $primaryColor;
+        border: none;
+        color: $lightColor;
+        padding: 10px 25px;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+    }
+    
+    .modalOverlay{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: $secondaryColor;
+        visibility: hidden;
+        &.visible{
+            visibility: visible;
+        }
+    
+        .modal{
+            width: 500px;
+            height: 300px;
+            background: $lightColor;
+            position: relative;
+            margin: 10% auto;
+            border-radius: 8px;
+            text-align: center;
+            transform: scale(1.2);
+            transition: transform 0.2s 0s ease-in-out;
+    
+            .close{
+                position: absolute;
+                right: 2px;
+                top: 3px;
+                padding: 6px 10px;
+                border-radius: 50%;
+    
+                i{
+                    font-size: 22px;
+                    color: rgba(169, 169, 169, 0.7);
+                    font-weight: 500;
+    
+                }
+            }
+            .context{
+                p{
+                    font-family: 'Inconsolata', monospace;
+                    font-size: 19px;
+                    padding-top: 80px;
+                }
+                h3{
+                    font-family: 'Inconsolata', monospace;
+                    font-size: 22px;
+                    padding-top: 10px;
+                }
+                h1{
+                    font-family: 'Inconsolata', monospace;
+                    font-size: 35px;
+                    padding-top: 12px;
+
+                    .typing{
+                        color: $textcolor;
+                    }
+                }
+            }
+        }
+    }
+}

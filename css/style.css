@@ -1,19 +1,15 @@
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .home {
-  background-image: url(./home.jpg);
+  background-image: url(../images/home.jpg);
   height: 100vh;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .home .click {
   background: #ff1905;
   border: none;
@@ -23,7 +19,6 @@
   display: block;
   margin: auto;
 }
-
 .home .modalOverlay {
   width: 100%;
   height: 100vh;
@@ -33,11 +28,9 @@
   background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
 }
-
 .home .modalOverlay.visible {
   visibility: visible;
 }
-
 .home .modalOverlay .modal {
   width: 500px;
   height: 300px;
@@ -46,14 +39,9 @@
   margin: 10% auto;
   border-radius: 8px;
   text-align: center;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: -webkit-transform 0.2s 0s ease-in-out;
-  transition: -webkit-transform 0.2s 0s ease-in-out;
+  transform: scale(1.2);
   transition: transform 0.2s 0s ease-in-out;
-  transition: transform 0.2s 0s ease-in-out, -webkit-transform 0.2s 0s ease-in-out;
 }
-
 .home .modalOverlay .modal .close {
   position: absolute;
   right: 2px;
@@ -61,32 +49,28 @@
   padding: 6px 10px;
   border-radius: 50%;
 }
-
 .home .modalOverlay .modal .close i {
   font-size: 22px;
   color: rgba(169, 169, 169, 0.7);
   font-weight: 500;
 }
-
 .home .modalOverlay .modal .context p {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 19px;
   padding-top: 80px;
 }
-
 .home .modalOverlay .modal .context h3 {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 22px;
   padding-top: 10px;
 }
-
 .home .modalOverlay .modal .context h1 {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 35px;
   padding-top: 12px;
 }
-
 .home .modalOverlay .modal .context h1 .typing {
   color: #ed123c;
 }
+
 /*# sourceMappingURL=style.css.map */
